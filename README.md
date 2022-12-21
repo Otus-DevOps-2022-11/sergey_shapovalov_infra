@@ -6,6 +6,8 @@ alias some='ssh -i ~/.ssh/appuser -A -J appuser@158.160.39.176 appuser@10.128.0.
 
 Тогда можно будет заходить на someinternalhost в одну команду.
 
+
+
 Для логона на someinternalhost c помощью команды $ssh someinternalhost нужно внести с файл ~/.ssh/config блок:
 
 Host someinternalhost \
