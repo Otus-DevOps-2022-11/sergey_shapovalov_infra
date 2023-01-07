@@ -27,5 +27,5 @@ someinternalhost_IP = 10.128.0.28
 
 Status of last Deployment:<br>
 <img src="https://github.com/Otus-DevOps-2022-11/sergey_shapovalov_infra/workflows/Auto Assign/badge.svg?branch=master"><br>
-<img src="https://github.com/Otus-DevOps-2022-11/sergey_shapovalov_infra/workflows/un tests for OTUS homework/badge.svg?branch=master"><br>
+<img src="https://github.com/Otus-DevOps-2022-11/sergey_shapovalov_infra/workflows/Run tests for OTUS homework/badge.svg?branch=master"><br>
 
