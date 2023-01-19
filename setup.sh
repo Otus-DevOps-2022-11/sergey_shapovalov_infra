@@ -21,5 +21,5 @@ echo "Enable and start Pritunl and MongoDB"
 systemctl enable --now pritunl mongod
 systemctl status pritunl mongod
 
-echo "Visit https://<your_server_ip> to continue installation."
+echo "Visit https://$(curl -s ipinfo.io/ip) to continue installation."
 
