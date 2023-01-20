@@ -1,6 +1,5 @@
 # sergey_shapovalov_infra
 
-# HW-05 (cloud-bastion)
 
 Для логона по ssh через bastion на someinternalhost нужно добавить в .bashrc алиас:
 
