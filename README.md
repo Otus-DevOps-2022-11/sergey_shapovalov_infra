@@ -1,5 +1,7 @@
 # sergey_shapovalov_infra
 
+# HW-05 (cloud-bastion)
+
 Для логона по ssh через bastion на someinternalhost нужно добавить в .bashrc алиас:
 
 alias some='ssh -i ~/.ssh/appuser -A -J appuser@158.160.39.176 appuser@10.128.0.28'
@@ -23,7 +25,3 @@ ProxyCommand ssh appuser@158.160.39.176 -W %h:%p
 
 bastion_IP = 158.160.39.176 \
 someinternalhost_IP = 10.128.0.28
-
-Status of last Deployments:<br>
-<img src="https://github.com/Otus-DevOps-2022-11/sergey_shapovalov_infra/workflows/Auto Assign/badge.svg?branch=main"><br>
-<img src="https://github.com/Otus-DevOps-2022-11/sergey_shapovalov_infra/actions/workflows/run-tests-2022-08.yml?branch=main"><br>
