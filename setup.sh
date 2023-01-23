@@ -23,3 +23,4 @@ systemctl status pritunl mongod
 
 echo "Visit https://$(curl -s ipinfo.io/ip) to continue installation."
 
+
