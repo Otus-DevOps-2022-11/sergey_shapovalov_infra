@@ -22,5 +22,5 @@ Protocol 2 \
 ProxyCommand ssh appuser@158.160.39.176 -W %h:%p 
 
 
-bastion_IP = 158.160.39.176 \
+bastion_IP = 158.160.39.176 
 someinternalhost_IP = 10.128.0.28
