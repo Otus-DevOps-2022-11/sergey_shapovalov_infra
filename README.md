@@ -4,7 +4,7 @@ HW-05 (cloud-bastion)
 
 Для логона по ssh через bastion на someinternalhost нужно добавить в .bashrc алиас:
 
-alias some='ssh -i ~/.ssh/appuser -A -J appuser@158.160.39.176 appuser@10.128.0.28'
+alias some='ssh -i ~/.ssh/appuser -A -J appuser@158.160.50.76 appuser@10.128.0.28'
 
 Тогда можно будет заходить на someinternalhost в одну команду.
 
@@ -20,8 +20,8 @@ Port 22 \
 CheckHostIP no \
 Compression yes \
 Protocol 2 \
-ProxyCommand ssh appuser@158.160.39.176 -W %h:%p 
+ProxyCommand ssh appuser@158.160.50.76 -W %h:%p 
 
 
-bastion_IP = 158.160.39.176 
+bastion_IP = 158.160.50.76 
 someinternalhost_IP = 10.128.0.28
