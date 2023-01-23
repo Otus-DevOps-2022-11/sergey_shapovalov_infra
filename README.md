@@ -1,7 +1,7 @@
 sergey_shapovalov_infra
 
 # HW-06 (cloud-testapp)
-testapp_IP = 51.250.67.79 \
+testapp_IP = 51.250.67.79
 testapp_port = 9292
 
 yc compute instance create \
