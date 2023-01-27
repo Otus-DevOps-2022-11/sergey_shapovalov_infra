@@ -11,3 +11,4 @@ WorkingDirectory=/home/ubuntu/reddit
 
 [Install]
 WantedBy=multi-user.target
+
