@@ -3,5 +3,5 @@
   "source_image_family": "ubuntu-..04-lts",
   "service_account_key_file": "....json"
   "zone": "ru-central1-.",
-  "disk_size_gb": ".."
+  "disk_size_gb": "..",
 }
