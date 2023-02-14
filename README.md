@@ -1,4 +1,5 @@
 # sergey_shapovalov_infra
+
 ## HW-07 (Packer)
 
 Для логона по ssh через bastion на someinternalhost нужно добавить в .bashrc алиас:
@@ -29,3 +30,18 @@ someinternalhost_IP = 10.128.0.28
 Создана VM в Yandex Cloud из полученного образа, запушено приложение в ручном режиме после авторизации по ssh.
 Вынесена часть параметров из packer файла в шаблон, в том числе доп параметр.
 Настроен packer файл immutable.json с полной настройкой сервера и запуска сервиса puma.service через systemctl юнит. Написан unit systemd.
+=======
+HW-08 (terraform-1)
+
+В ходе выполнения ДЗ было выполнено:
+- установлен Terraform, создан сервисный акаунт в YC, сделан ключ доступа, назначены права.
+- установлен terraform provider нужной версии, создан файл main.tf для создания инстанса в YC, протестировано создание VM.
+- вынесена переменная external_ip_address_app в файл ouputs.tf для удобства подключения и дальнейшей настройки provisioners.
+- настроены секции provisioners и подредактированы сами файлы для корректной работы с моим image созданным Packer в HW-07.
+- определены переменные в variables.tf изменён main.tf для использования определенных переменных.
+- определены авторизационные переменные в terraform.tfvars изменён main.tf для использования этих переменных. 
+- определены переменные для ssh_private_key в секции connections перенастроено в main.tf на их использование. Аналогично и для zone. 
+- Отформатированы файлы: terraform fmt Протестирована работоспособность terraform destroy -auto-approve && terraform apply -auto-approve
+- добавлены в git нужные файлы, git commit, git push.
+- удалил созданную VM, сделал PR в github.
+
