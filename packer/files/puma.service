@@ -1,0 +1,14 @@
+[Unit]
+Description=Puma service
+After=network.target
+
+[Service]
+Type=simple
+User=appuser
+Group=appuser
+ExecStart=/usr/local/bin/puma
+WorkingDirectory=/home/ubuntu/reddit
+
+[Install]
+WantedBy=multi-user.target
+
