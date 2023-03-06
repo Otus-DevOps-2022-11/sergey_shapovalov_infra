@@ -23,6 +23,7 @@ ProxyCommand ssh appuser@158.160.39.176 -W %h:%p
 
 bastion_IP = 158.160.39.176 
 someinternalhost_IP = 10.128.0.28
+
 =======
 Был создан сервисный аккаунт в Yandex Cloud.
 Написан и валидирован packer file ubuntu16.json
@@ -31,6 +32,7 @@ someinternalhost_IP = 10.128.0.28
 Вынесена часть параметров из packer файла в шаблон, в том числе доп параметр.
 Настроен packer файл immutable.json с полной настройкой сервера и запуска сервиса puma.service через systemctl юнит. Написан unit systemd.
 =======
+
 HW-08 (terraform-1)
 
 В ходе выполнения ДЗ было выполнено:
