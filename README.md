@@ -44,6 +44,7 @@ HW-08 (terraform-1)
 - Отформатированы файлы: terraform fmt Протестирована работоспособность terraform destroy -auto-approve && terraform apply -auto-approve
 - добавлены в git нужные файлы, git commit, git push.
 - удалил созданную VM, сделал PR в github.
+
 =======
 HW-10 (ansible-1)
 
