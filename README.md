@@ -23,8 +23,8 @@ ProxyCommand ssh appuser@158.160.39.176 -W %h:%p
 
 bastion_IP = 158.160.39.176 
 someinternalhost_IP = 10.128.0.28
-
 =======
+
 Был создан сервисный аккаунт в Yandex Cloud.
 Написан и валидирован packer file ubuntu16.json
 Создан image из ubuntu16.json
