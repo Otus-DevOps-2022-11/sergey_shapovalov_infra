@@ -44,4 +44,15 @@ HW-08 (terraform-1)
 - Отформатированы файлы: terraform fmt Протестирована работоспособность terraform destroy -auto-approve && terraform apply -auto-approve
 - добавлены в git нужные файлы, git commit, git push.
 - удалил созданную VM, сделал PR в github.
+=======
+HW-10 (ansible-1)
 
+- Установлен ansible, созданы 2 VM в YC для тестирования.
+- создан inventory file ini формата, потом inventory.yaml, проверен доступ к серверам с помощью ping: ansible all -i inventory.yaml -m ping. Настроены группы хостов.
+- создан файл ansible.cfg куда вынес переменные.
+- Проверил работу модуля command и его различия с модулем shell (-m shell использует переменные окружения, в отличии от -m command) ansible app -m shell -a 'ruby -v; bundler -v'
+- Проверил статус mongod на db сервере с помощью команды и модулей:
+  - ansible db -m shell -a 'systemcl status mongod'
+  - ansible db -m systemd -a name=mondod
+  - ansible db -m service -a name=mongod
+- написан простой playbook для клонирования репозитория git в директорию на сервере. При повторном выполнении playbook изменений на сервере нет.
